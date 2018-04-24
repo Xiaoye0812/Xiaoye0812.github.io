@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <meta name="description" content="集合集合的概念集合与元组、列表一样，是Python语言六大序列类型之一，集合里存在的元素都是唯一的，不会有重复元素，并且与数学上的集合概念类似，可以进行交集、并集、差集等运算。
+集合的使用1. 集合的创建1234567# 创建集合可以使用大括号加元素# 可以添加重复的元素，但是集合创建后会将重复元素" />
+  
+
+  
+  
+  
+  
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="集合集合的概念集合与元组、列表一样，是Python语言六大序列类型之一，集合里存在的元素都是唯一的，不会有重复元素，并且与数学上的集合概念类似，可以进行交集、并集、差集等运算。 集合的使用1. 集合的创建1234567# 创建集合可以使用大括号加元素# 可以添加重复的元素，但是集合创建后会将重复元素变为一个元素set1 = &amp;#123;1, 2, 3, 3, 3, 2&amp;#125;print(set">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2018/04/24/Python基础（七）- 集合/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="集合集合的概念集合与元组、列表一样，是Python语言六大序列类型之一，集合里存在的元素都是唯一的，不会有重复元素，并且与数学上的集合概念类似，可以进行交集、并集、差集等运算。 集合的使用1. 集合的创建1234567# 创建集合可以使用大括号加元素# 可以添加重复的元素，但是集合创建后会将重复元素变为一个元素set1 = &amp;#123;1, 2, 3, 3, 3, 2&amp;#125;print(set">
+<meta property="og:locale" content="zh-hans">
+<meta property="og:updated_time" content="2018-04-24T15:05:06.595Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="集合集合的概念集合与元组、列表一样，是Python语言六大序列类型之一，集合里存在的元素都是唯一的，不会有重复元素，并且与数学上的集合概念类似，可以进行交集、并集、差集等运算。 集合的使用1. 集合的创建1234567# 创建集合可以使用大括号加元素# 可以添加重复的元素，但是集合创建后会将重复元素变为一个元素set1 = &amp;#123;1, 2, 3, 3, 3, 2&amp;#125;print(set">
+  
+  
+    <link rel="icon" href="/css/images/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  
+  <!-- baidu webmaster push -->
+  <script src='//push.zhanzhang.baidu.com/push.js'></script>
+</head>
+<body class="home blog custom-background custom-font-enabled single-author">
+  <div id="page" class="hfeed site">
+      <header id="masthead" class="site-header" role="banner">
+    <hgroup>
+      <h1 class="site-title">
+        <a href="/" title="Hexo" rel="home">Hexo</a>
+      </h1>
+      
+        <script type="text/javascript" src="http://api.hitokoto.us/rand?encode=js&charset=utf-8"></script>
+        <h2 class="site-description"><script>hitokoto();</script></h2>
+      
+    </hgroup>
+
+    <nav id="site-navigation" class="main-navigation" role="navigation">
+            <button class="menu-toggle">菜单</button>
+            <a class="assistive-text" href="/#content" title="跳至内容">跳至内容</a><!--TODO-->
+            <div class="menu-main-container">
+                <ul id="menu-main" class="nav-menu">
+                
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/">Home</a></li>
+                
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/archives">Archives</a></li>
+                
+                </ul>
+            </div>
+    </nav>
+</header>
+      <div id="main" class="wrapper">
+        <div id="primary" class="site-content"><div id="content" role="main"><article id="post-Python基础（七）- 集合" class="post-Python基础（七）- 集合 post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        <div class="comments-link">
+            
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2018/04/24/Python基础（七）- 集合/" data-id="cjgdt08gs00014h916ifwx6ie" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <h1 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h1><h2 id="集合的概念"><a href="#集合的概念" class="headerlink" title="集合的概念"></a>集合的概念</h2><p>集合与元组、列表一样，是Python语言六大序列类型之一，集合里存在的元素都是唯一的，不会有重复元素，并且与数学上的集合概念类似，可以进行交集、并集、差集等运算。</p>
+<h2 id="集合的使用"><a href="#集合的使用" class="headerlink" title="集合的使用"></a>集合的使用</h2><h3 id="1-集合的创建"><a href="#1-集合的创建" class="headerlink" title="1. 集合的创建"></a>1. 集合的创建</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建集合可以使用大括号加元素</span></span><br><span class="line"><span class="comment"># 可以添加重复的元素，但是集合创建后会将重复元素变为一个元素</span></span><br><span class="line">set1 = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">3</span>, <span class="number">3</span>, <span class="number">2</span>&#125;</span><br><span class="line">print(set1) <span class="comment"># &#123;1, 2, 3&#125;</span></span><br><span class="line">print(<span class="string">'Length ='</span>, len(set1)) <span class="comment"># Length = 3</span></span><br><span class="line">set2 = set(range(<span class="number">1</span>, <span class="number">10</span>))</span><br><span class="line">print(set2) <span class="comment"># &#123;1, 2, 3, 4, 5, 6, 7, 8, 9&#125;</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-集合的增删操作"><a href="#2-集合的增删操作" class="headerlink" title="2. 集合的增删操作"></a>2. 集合的增删操作</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">set1 = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">3</span>, <span class="number">3</span>, <span class="number">2</span>&#125;</span><br><span class="line">set2 = set(range(<span class="number">1</span>, <span class="number">10</span>))</span><br><span class="line">set1.add(<span class="number">4</span>)</span><br><span class="line">set1.add(<span class="number">5</span>)</span><br><span class="line">set2.update([<span class="number">11</span>, <span class="number">12</span>])</span><br><span class="line">print(set1) <span class="comment"># &#123;1, 2, 3, 4, 5&#125;</span></span><br><span class="line">print(set2) <span class="comment"># &#123;1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12&#125;</span></span><br><span class="line">set2.discard(<span class="number">5</span>)</span><br><span class="line"><span class="comment"># remove的元素如果不存在会引发KeyError</span></span><br><span class="line"><span class="keyword">if</span> <span class="number">4</span> <span class="keyword">in</span> set2:</span><br><span class="line">    set2.remove(<span class="number">4</span>)</span><br><span class="line">print(set2) <span class="comment"># &#123;1, 2, 3, 6, 7, 8, 9, 11, 12&#125;</span></span><br><span class="line"><span class="comment"># 遍历集合容器</span></span><br><span class="line"><span class="keyword">for</span> elem <span class="keyword">in</span> set2:</span><br><span class="line">    print(elem ** <span class="number">2</span>, end=<span class="string">' '</span>) <span class="comment"># 1 4 9 36 49 64 81 121 144</span></span><br><span class="line">print()</span><br><span class="line"><span class="comment"># 将元组转换成集合</span></span><br><span class="line">set3 = set((<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>))</span><br><span class="line">print(set3.pop()) <span class="comment"># 3</span></span><br><span class="line">print(set3) <span class="comment"># &#123;1, 2&#125;</span></span><br></pre></td></tr></table></figure>
+<h3 id="3-元素的交集、并集、差集等操作"><a href="#3-元素的交集、并集、差集等操作" class="headerlink" title="3. 元素的交集、并集、差集等操作"></a>3. 元素的交集、并集、差集等操作</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 集合的交集、并集、差集、对称差运算</span></span><br><span class="line">set1 = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">10</span>, <span class="number">11</span>&#125;</span><br><span class="line">set2 = set(range(<span class="number">1</span>, <span class="number">10</span>))</span><br><span class="line">print(set1 &amp; set2) <span class="comment"># &#123;1, 2, 3&#125;</span></span><br><span class="line"><span class="comment"># print(set1.intersection(set2)) # 交集</span></span><br><span class="line">print(set1 | set2) <span class="comment"># &#123;1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11&#125;</span></span><br><span class="line"><span class="comment"># print(set1.union(set2)) # 并集</span></span><br><span class="line">print(set1 - set2) <span class="comment"># &#123;10, 11&#125;</span></span><br><span class="line"><span class="comment"># print(set1.difference(set2)) # 差集</span></span><br><span class="line">print(set1 ^ set2) <span class="comment"># &#123;4, 5, 6, 7, 8, 9, 10, 11&#125;</span></span><br><span class="line"><span class="comment"># print(set1.symmetric_difference(set2)) # 对称差集</span></span><br></pre></td></tr></table></figure>
+<h3 id="4-集合判断子集和超集"><a href="#4-集合判断子集和超集" class="headerlink" title="4. 集合判断子集和超集"></a>4. 集合判断子集和超集</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 判断子集和超集</span></span><br><span class="line">set1 = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">10</span>, <span class="number">11</span>&#125;</span><br><span class="line">set2 = set(range(<span class="number">1</span>, <span class="number">10</span>))</span><br><span class="line">set3 = set((<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>))</span><br><span class="line">print(set2 &lt;= set1) <span class="comment"># False</span></span><br><span class="line"><span class="comment"># print(set2.issubset(set1))</span></span><br><span class="line">print(set3 &lt;= set1) <span class="comment"># True</span></span><br><span class="line"><span class="comment"># print(set3.issubset(set1))</span></span><br><span class="line">print(set1 &gt;= set2) <span class="comment"># False</span></span><br><span class="line"><span class="comment"># print(set1.issuperset(set2))</span></span><br><span class="line">print(set1 &gt;= set3) <span class="comment"># True</span></span><br><span class="line"><span class="comment"># print(set1.issuperset(set3))</span></span><br></pre></td></tr></table></figure>
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/2018/04/24/Python基础（七）- 集合/">
+    <time datetime="2018-04-24T15:05:06.595Z" class="entry-date">
+        2018-04-24
+    </time>
+</a>
+    
+    
+    </footer>
+</article>
+
+
+    
+<nav class="nav-single">
+    <h3 class="assistive-text">文章导航</h3>
+    
+        <span class="nav-previous"><a href="/2018/04/24/Python基础（八）- 字典/" rel="prev"><span class="meta-nav">←</span> (no title)</a></span>
+    
+    
+        <span class="nav-next"><a href="/2018/04/24/Python基础（六）- 元组/" rel="next">(no title) <span class="meta-nav">→</span></a></span>
+    
+</nav><!-- .nav-single -->
+
+
+
+
+
+
+
+</div></div>
+        <div id="secondary" class="widget-area" role="complementary">
+  
+    <aside id="search" class="widget widget_search"><form role="search" method="get" accept-charset="utf-8" id="searchform" class="searchform" action="//google.com/search">
+    <div>
+        <input type="text" value="" name="s" id="s" />
+        <input type="submit" id="searchsubmit" value="搜索" />
+    </div>
+</form></aside>
+  
+    
+  
+    
+  
+    
+  <aside class="widget">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget-content">
+      <ul>
+        
+          <li>
+            <a href="/2018/04/24/Python基础（八）- 字典/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/24/Python基础（七）- 集合/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/24/Python基础（六）- 元组/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/24/Python基础（五）- 列表/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/24/Python基础（四）- 字符串操作/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </aside>
+
+  
+    
+  
+    
+  
+</div>
+      </div>
+      <footer id="colophon" role="contentinfo">
+    <p>&copy; 2018 L.C.Y
+    All rights reserved.</p>
+    <p>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></p>
+</footer>
+    <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+<script src="/js/navigation.js"></script>
+
+<div id="bg"></div>
+
+  </div>
+</body>
+</html>
